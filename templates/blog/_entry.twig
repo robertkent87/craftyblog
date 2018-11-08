@@ -13,7 +13,7 @@
                     <h2 class="subheading">{{ entry.blogIntroduction }}</h2>
                     <span class="meta">Posted by
                 <a href="#">{{ entry.author }}</a>
-                on {{ entry.postDate | date("F d, Y") }}</span>
+                on {{ entry.postDate | date("F d, Y") }} under {% for category in entry.category %}{{ category }}{% endfor %}</span>
                 </div>
             </div>
         </div>
